@@ -62,5 +62,13 @@
 }
 
 @media screen and (min-width: 768px) {
-    
+    .evidenced-bar-container{
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .evidenced-bar-container{
+        max-width: 500px;
+    }
 }

@@ -191,7 +191,9 @@ SECTIONS
     text-align: center;
     justify-content: space-around;
     color: var(--quinary-color);
-    padding-bottom: var(--spacer-1);
+    gap: var(--spacer-1);
+    max-width: 100%;
+    margin: auto;
 }
 
 /* albums */
@@ -206,6 +208,10 @@ SECTIONS
 
 .card img{
     padding-bottom: var(--spacer-05);
+}
+
+.radius img{
+    border-radius: 50%;
 }
 
 /*  ******* BT-CONTROL *******  */

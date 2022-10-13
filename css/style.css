@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --h-bt-control: 50px;
+}
+
+.main-container, .button-control-container,
+.side-bar-container {
+    border: 1px solid rgb(105, 20, 218);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* *********************************************
+SECTIONS
+********************************************** */
+
+/* SIDE-BAR */
+.row.side-bar {
+    /* chiede se è giusto fare il calc?*/
+    height: calc(100% - var(--h-bt-control));
+}
+
+.side-bar-container {
+    flex-basis: calc(100% / 6);
+    /* flex-shrink: 0; */
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar-side,.bottom-bar-side {
+    flex-shrink: 0;
+}
+
+.middle-side-bar {
+    flex-grow: 1;
+    overflow: auto;
+}
+/* MAIN */
+.main-container {
+    flex-basis: calc(100% / 6 * 5);
+}
+
+/* upgrade */
+.upgrade-nav {
+    text-align: end;
+}
+
+/* evidenced-bar-container */
+.evidenced-bar-container{
+    text-align: center;
+}
+
+/* BT-CONTROL */
+.button-control-container {
+    /* da sottrarre all'altezza della .row.side-bar */
+    height: var(--h-bt-control);
+}

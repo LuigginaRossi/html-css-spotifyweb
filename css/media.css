@@ -1,0 +1,66 @@
+@media screen and (min-width: 568px) {
+    
+    /* sidebar */
+    .side-bar-container {
+        flex-basis: 150px;
+        padding: var(--spacer-1);
+    }
+
+    .big-logo{
+        display: block;
+        height: 3rem;
+        padding-right: 2.5rem;
+    }
+
+    .small-logo{
+        display: none;
+    }
+
+    .text-none{
+        display: block;
+        padding-left: .2rem;
+    }
+    
+    .icon-list {
+        height: 1.5rem;  
+    }
+    
+    .item-list, .download-container a{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .playlist-menu{
+        display: block;
+    }
+
+    .playlist-menu h3{
+        padding-top: 1rem;
+    }
+
+    .icon-list,.download{
+        flex-basis: 10%;
+    }
+
+    .download-container a{
+        border-bottom: 1px solid var(--quinary-color);
+        margin-bottom: var(--spacer-05);
+    }
+
+    .fa-circle-user,.user{
+        color: var(--quinary-color) ;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .row.user{
+        justify-content: flex-start;
+    }
+    /* main */
+    .main-container {
+        width: calc(100% - 150px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}

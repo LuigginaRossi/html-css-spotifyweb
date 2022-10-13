@@ -9,7 +9,14 @@ General
 
 :root{
     --h-bt-control: 50px;
-    --w-side-bar: 150px;
+
+    --primary-color: black;
+    --secondary-color: #141922;
+    --tertiary-color: #080b12;
+    --quaternary-color: #282828;
+    --quinary-color: #a5a3a1;
+    --spacer-1: 1rem;
+    --spacer-05: .5rem;
 }
 
 .main-container, .button-control-container,
@@ -20,8 +27,56 @@ General
 body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
+html{
+    font-size: 14px;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+    padding-bottom: var(--spacer-1);
+}
+
+h3{
+    font-size: 1rem;
+    padding-bottom: var(--spacer-1);
+}
+
+h4{
+    font-size: .8rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--quinary-color);
+    display: block;
+    padding: .5rem 0;
+}
+
+button{
+    color: white;
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: .3rem .5rem;
+}
 
 /***************************************************** 
 Utilities
@@ -35,22 +90,31 @@ Utilities
     width: calc(100% / 6);
 }
 
+.col-1-4{
+    width: calc(90% / 4);
+}
+.col-1-2{
+    width: calc(90% / 2);
+}
+
+.row.side-bar-main {
+    /* chiede se è giusto fare il calc?*/
+    height: calc(100% - var(--h-bt-control));
+}
 
 /* **************************************************** 
 SECTIONS
 ******************************************************* */
 
 /*  ******* SIDE-BAR *******  */
-.row.side-bar {
-    /* chiede se è giusto fare il calc?*/
-    height: calc(100% - var(--h-bt-control));
-}
 
 .side-bar-container {
-    flex-basis: var(--w-side-bar);
-    /* flex-shrink: 0; */
+    flex-basis: 50px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    background-color: black;
+    padding: 0.5rem 0;
 }
 
 .top-bar-side,.bottom-bar-side {
@@ -62,26 +126,83 @@ SECTIONS
     overflow: auto;
 }
 
+.small-logo {
+    width: 2rem;
+}
+
+.icon-list{
+    height: 2rem;
+}
+
+.big-logo,.text-none {
+    display: none;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-list{
+    justify-content: center ;
+}
+
+.plus-icon{
+    background-color: var(--quinary-color);
+    color: black;
+    font-weight: bold;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.playlist-menu{
+    display: none;
+}
+
+.bottom-bar-side{
+    padding: var(--spacer-05);
+}
+
+.row.user{
+    justify-content: center;
+    align-items: center;
+}
+
 /* ******* MAIN ******* */
 .main-container {
-    flex-basis: calc(100% - var(--w-side-bar));
+    width: calc(100% - 50px);
+    background-color: var(--secondary-color);
+}
+
+.p-container,.upgrade-nav {
+    padding: var(--spacer-1);
+}
+
+.title-evidence{
+    padding: 1rem;
 }
 
 /* upgrade */
 .upgrade-nav {
     text-align: end;
+    background-color: var(--tertiary-color);
 }
 
 /* evidenced-bar-container */
 .evidenced-bar-container{
     text-align: center;
+    justify-content: space-around;
+    color: var(--quinary-color);
+    padding-bottom: var(--spacer-1);
 }
-
-
 
 /*  ******* BT-CONTROL *******  */
 .button-control-container {
     /* da sottrarre all'altezza della .row.side-bar */
     height: var(--h-bt-control);
     justify-content: space-between;
+    background-color: var(--quaternary-color);
+    flex-shrink: 0;
+    
 }

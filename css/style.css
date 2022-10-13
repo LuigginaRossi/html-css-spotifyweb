@@ -53,6 +53,7 @@ h3{
 
 h4{
     font-size: .8rem;
+    color: var(--quinary-color);
 }
 
 li{
@@ -191,7 +192,6 @@ SECTIONS
     text-align: center;
     justify-content: space-around;
     color: var(--quinary-color);
-    gap: var(--spacer-1);
     max-width: 100%;
     margin: auto;
 }
@@ -222,6 +222,10 @@ SECTIONS
     background-color: var(--quaternary-color);
     flex-shrink: 0;
     color: var(--quinary-color);   
+}
+
+.song-played-container img{
+    height: 50px;
 }
 
 

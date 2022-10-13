@@ -59,16 +59,27 @@
     .main-container {
         width: calc(100% - 150px);
     }
-}
-
-@media screen and (min-width: 768px) {
     .evidenced-bar-container{
         max-width: 350px;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .evidenced-bar-container{
         max-width: 500px;
+    }
+
+    [class^="col"]{
+        width: calc(100% / 4);;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .evidenced-bar-container{
+        max-width: 600px;
+    }
+
+    [class^="col"]{
+        width: calc(100% / 6);;
     }
 }

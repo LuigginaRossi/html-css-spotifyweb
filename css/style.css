@@ -277,3 +277,11 @@ SECTIONS
     top: 0;
     left: 0;
 }
+
+.dx-bt-control{
+    align-items: center;
+}
+
+.dx-bt-control .time-line{
+    width: 6vw;
+}

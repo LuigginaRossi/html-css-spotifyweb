@@ -185,6 +185,8 @@ SECTIONS
 .upgrade-nav {
     text-align: end;
     background-color: var(--tertiary-color);
+    position: sticky;
+    top: 0;
 }
 
 /* evidenced-bar-container */

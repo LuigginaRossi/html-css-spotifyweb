@@ -196,12 +196,14 @@ SECTIONS
     color: var(--quinary-color);
     max-width: 100%;
     margin: auto;
+    margin-bottom: var(--spacer-1)
 }
 
 /* albums */
 [class^="col"]{
     padding: var(--spacer-05);
     text-align: center;
+    padding-bottom: var(--spacer-1);
 }
 
 .cards-container{

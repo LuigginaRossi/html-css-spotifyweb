@@ -67,6 +67,14 @@ a{
     padding: .3rem 0;
 }
 
+a:hover{
+    color:white;
+    font-size: bold;
+    
+}
+
+
+
 button{
     color: white;
     background-color: var(--secondary-color);
@@ -76,6 +84,7 @@ button{
     font-size: 0.8rem;
     cursor: pointer;
 }
+
 
 /***************************************************** 
 Utilities
@@ -110,13 +119,20 @@ SECTIONS
 
 /*  ******* SIDE-BAR *******  */
 
+.side-bar-container a:hover {
+    color:white;
+    font-size: bold;
+    font-size: 15px;
+    border-left: 2px solid #d4f6af;
+}
+
 .side-bar-container {
     flex-basis: 50px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     background-color: black;
-    padding: 0.5rem 0;
+    padding: 0.5rem  0;
     height: 100%;
 }
 
@@ -192,6 +208,15 @@ SECTIONS
     top: 0;
 }
 
+.upgrade-bt{
+    transition: transform 2s jump-end .2s, background-color 2s jump-end .2s;
+}
+
+.upgrade-bt:hover{
+    transform: scale(1.1);
+    background-color: var(--quaternary-color) ;
+}
+
 /* evidenced-bar-container */
 .evidenced-bar-container{
     text-align: center;
@@ -201,6 +226,17 @@ SECTIONS
     margin: auto;
     margin-bottom: var(--spacer-1)
 }
+
+.evidenced-bar-container h4{
+    border-bottom: 2px solid transparent;
+}
+
+.evidenced-bar-container a:hover h4{
+    color:white;
+    font-size: bold;
+    border-bottom: 2px solid #d4f6af;
+}
+
 
 /* albums */
 [class^="col"]{
@@ -215,6 +251,36 @@ SECTIONS
 
 .card img{
     padding-bottom: var(--spacer-05);
+}
+
+.img-container{
+    position: relative;
+}
+
+.ovelay-img{
+    display: none;
+    transition: display 3s linear .5s;
+}
+
+.img-container:hover .ovelay-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-container.radius {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ovelay-img .fa-circle-play{
+    font-size: 4rem;
 }
 
 .radius img{

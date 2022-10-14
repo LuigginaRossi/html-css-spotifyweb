@@ -8,7 +8,7 @@ General
 }
 
 :root{
-    --h-bt-control: 50px;
+    --h-bt-control: 70px;
 
     --primary-color: black;
     --secondary-color: #141922;
@@ -96,7 +96,7 @@ Utilities
     width: calc(100% / 6);
 }
 
-.row.sidebar-main {
+.row.sidebar-main-container {
     /* chiede se è giusto fare il calc?*/
     /* height: calc(100% - var(--h-bt-control)); */
     flex-grow: 1;
@@ -233,7 +233,7 @@ SECTIONS
 }
 
 .button-control-container  .p-x{
-    padding: 0 .5rem;
+    padding: 0 1rem;
 }
 
 .song-played-container,.sx-bt-control{
@@ -252,4 +252,28 @@ SECTIONS
     flex-direction: column;
 }
 
+.button-control-container button{
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
 
+.progress-time-line-container{
+    align-items: center;
+}
+
+.time-line{
+    height: 5px;
+    background-color: #5a5a5a;
+    flex-grow: 1;
+    border-radius: 2px;
+    position: relative;
+}
+
+.overlay-time-line{
+    height: 5px;
+    background-color: var(--quinary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}

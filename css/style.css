@@ -73,7 +73,8 @@ button{
     border: 1px solid white;
     border-radius: 20px;
     padding: .5rem 1rem;
-    font-size: 0.8rem
+    font-size: 0.8rem;
+    cursor: pointer;
 }
 
 /***************************************************** 
@@ -233,7 +234,7 @@ SECTIONS
 }
 
 .button-control-container  .p-x{
-    padding: 0 1rem;
+    padding: 0 .5rem;
 }
 
 .song-played-container,.sx-bt-control{
@@ -241,7 +242,7 @@ SECTIONS
 }
 
 .song-played-container img{
-    height: calc(var(--h-bt-control) - 20px);
+    height: calc(var(--h-bt-control) - 30px);
 }
 
 .song-played-container h3,.button-control-container a{
@@ -256,6 +257,7 @@ SECTIONS
     background-color: transparent;
     border: none;
     font-size: 1rem;
+    padding:  .5rem;
 }
 
 .progress-time-line-container{
@@ -283,5 +285,9 @@ SECTIONS
 }
 
 .dx-bt-control .time-line{
-    width: 6vw;
+    width: 5vw;
+}
+
+.center-bt-control{
+    text-align: center;
 }

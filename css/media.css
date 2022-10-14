@@ -72,6 +72,17 @@
     [class^="col"]{
         width: calc(100% / 4);;
     }
+
+    .heart-folder-container{
+        flex-direction: row;
+        padding-left: 3rem;
+    }
+
+    .progress-time-line-container{
+        min-width: 40vh;
+    }
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -82,4 +93,5 @@
     [class^="col"]{
         width: calc(100% / 6);;
     }
+
 }

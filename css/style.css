@@ -98,7 +98,9 @@ Utilities
 
 .row.sidebar-main {
     /* chiede se è giusto fare il calc?*/
-    height: calc(100% - var(--h-bt-control));
+    /* height: calc(100% - var(--h-bt-control)); */
+    flex-grow: 1;
+    overflow: auto;
 }
 
 /* **************************************************** 
@@ -226,10 +228,28 @@ SECTIONS
     background-color: var(--quaternary-color);
     flex-shrink: 0;
     color: var(--quinary-color);   
+    align-items: center;
+    padding: var(--spacer-05);
+}
+
+.button-control-container  .p-x{
+    padding: 0 .5rem;
+}
+
+.song-played-container,.sx-bt-control{
+    align-items: center;
 }
 
 .song-played-container img{
-    height: 50px;
+    height: calc(var(--h-bt-control) - 20px);
+}
+
+.song-played-container h3,.button-control-container a{
+    padding: 0;
+}
+
+.heart-folder-container{
+    flex-direction: column;
 }
 
 
